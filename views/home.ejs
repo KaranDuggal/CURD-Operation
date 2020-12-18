@@ -1,0 +1,16 @@
+<% employees.forEach(function (employee) { %>
+<section>
+    <div class="ui segments">
+        <div class="ui segment">
+          <p><%= employee.firstname %> <%= employee.lastname %></p>
+        </div>
+        <div class="ui segments">
+          <div class="ui segment">
+            <p>Branch = <%= employee.branch %></p>
+          </div>
+          <div class="ui segment">
+            <p>Rs. <%= employee.salary %></p>
+          </div>
+</section>
+<% }) %>
+<a href="/addemployee" class="ui button">Add Employee</a>
